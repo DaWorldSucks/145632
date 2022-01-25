@@ -14,7 +14,7 @@ local settings = {
     Aim_Enabled = false,
     Draw_FOV = false,
     FOV_Colour = Color3.fromRGB(15,255,25),
-    FOV_Radius = 0,
+    FOV_Radius = 800,
     Sensitivity = 1,
     Offset = 36
 }
@@ -283,7 +283,7 @@ end)
 --Silent Aim
 local silentAimSettings = {
     Enabled = true,
-    Aim_FOV = 1,
+    Aim_FOV = 800,
     Teamcheck = false,
     Draw_FOV = false,
     FOV_Colour = Color3.fromRGB(255,15,25),
@@ -462,7 +462,7 @@ end)
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Byte Ware", "BloodTheme")
+local Window = Library.CreateLib("Byte Ware - Arsenal", "BloodTheme")
 
 --combat tab
 local CombatTab = Window:NewTab("Combat")
@@ -624,7 +624,7 @@ end)
 local OtherTab = Window:NewTab("Other")
 --Gui settings
 local GUISection = OtherTab:NewSection("GUI")
-GUISection:NewKeybind("Toggle GUI", "Toggles the GUI", Enum.KeyCode.RightShift, function()
+GUISection:NewKeybind("Toggle GUI", "Toggles the GUI", Enum.KeyCode.P, function()
 	Library:ToggleUI()
 end)
 
